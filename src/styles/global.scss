@@ -6,3 +6,34 @@ body, html {
 * {
     box-sizing: border-box;
 }
+
+:root {
+    background-blue1: #FDFDFE;
+    background-blue2: #F7F9FF;
+    background-gray1: #FCFCFD;
+    background-gray2: #F9F9FB;
+
+    content-blue1: #395BC7;
+    content-blue2: #1D2E5C;
+    content-gray1: #62636C;
+    content-gray2: #1E1F24;
+
+    component-blue1: #EDF2FE;
+    component-blue2: #DFEAFF;
+    component-blue3: #D0DFFF;
+    component-gray1: #EFF0F3;
+    component-gray2: #E7E8EC;
+    component-gray3: #E0E1E6;
+
+    border-blue1: #BDD1FF;
+    border-blue2: #A6BFF9;
+    border-blue3: #87A5EF;
+    border-gray1: #D8D9E0;
+    border-gray2: #CDCED7;
+    border-gray3: #B9BBC6;
+
+    solid-blue1: #3D63DD;
+    solid-blue2: #3657C3;
+    solid-gray1: #8B8D98;
+    solid-gray2: #80828D;
+}
