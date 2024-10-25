@@ -20,8 +20,4 @@ export default function Home() {
 			</div>
 		);
 	}
-
-	return (
-		<>desk</>
-	);
 }
