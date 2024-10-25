@@ -37,6 +37,7 @@ const RAW_RUNTIME_STATE =
           ["next-pwa", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.6.0"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:18.3.1"],\
+          ["react-icons", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.3.0"],\
           ["sass", "npm:1.80.4"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
         ],\
@@ -6784,6 +6785,7 @@ const RAW_RUNTIME_STATE =
           ["next-pwa", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.6.0"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:18.3.1"],\
+          ["react-icons", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.3.0"],\
           ["sass", "npm:1.80.4"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
         ],\
@@ -7472,6 +7474,28 @@ const RAW_RUNTIME_STATE =
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.3.1"],\
           ["scheduler", "npm:0.23.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-icons", [\
+      ["npm:5.3.0", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/react-icons-npm-5.3.0-3814684035-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "npm:5.3.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.3.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-icons-virtual-8368774f98/3/AppData/Local/Yarn/Berry/cache/react-icons-npm-5.3.0-3814684035-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.3.0"],\
+          ["@types/react", "npm:18.3.11"],\
+          ["react", "npm:18.3.1"]\
         ],\
         "packagePeers": [\
           "@types/react",\
