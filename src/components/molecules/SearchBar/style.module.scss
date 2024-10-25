@@ -1,0 +1,52 @@
+.container {
+    user-select: none; // Prevents text selection
+
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+
+    border-radius: 9999px;
+
+    padding: 0 32px 0 16px;
+
+    background-color: var(--component-gray1);
+
+    &:hover {
+        cursor: pointer;
+
+        transition: all 0.2s ease-in-out;
+
+        background-color: var(--component-gray2);
+    }
+
+    &:active {
+        background-color: var(--component-gray3);
+    }
+}
+
+.icon {
+    fill: var(--solid-gray1);
+
+    margin-right: 10px;
+}
+
+.keyboardKey {
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 2px 5px;
+    margin-right: 4px;
+
+    border-radius: 4px;
+
+    color: var(--content-gray1);
+
+    border: 1px solid var(--border-gray3);
+}
+
+.title {
+    font-size: 14px;
+
+    color: var(--content-gray1);
+}
