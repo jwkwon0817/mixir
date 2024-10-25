@@ -1,4 +1,4 @@
-export function GoogleLoginButton() {
+export default function GoogleLoginButton() {
 	return (
 		<div></div>
 	);
