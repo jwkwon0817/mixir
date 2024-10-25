@@ -4,6 +4,8 @@ import Modal from "@/components/molecules/Modal";
 import style from './style.module.scss';
 import {IoSearch} from "react-icons/io5";
 import {useEffect, useRef} from "react";
+import PageShortcut from "@/features/SearchModal/ui/PageShortcut";
+import { FaRegUser } from "react-icons/fa";
 
 const SearchModal = () => {
     const InputRef = useRef<HTMLInputElement | null>(null);
@@ -30,9 +32,12 @@ const SearchModal = () => {
                     placeholder={'검색어를 입력해주세요'}
                 />
             </div>
-            <section className={style.content}>
+            <article className={style.content}>
                 <h2 className={style.title}>바로 가기</h2>
-            </section>
+                <section>
+                    <PageShortcut name={'학생 관리'} icon={<FaRegUser />} href={'/sex'} />
+                </section>
+            </article>
         </Modal>
     );
 }
