@@ -1,4 +1,4 @@
-import style from './style.module.scss';
+import style from './PageShorcut.module.scss';
 import Link from "next/link";
 import {ReactNode} from "react";
 
