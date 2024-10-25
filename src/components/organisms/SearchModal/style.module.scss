@@ -39,6 +39,10 @@
 .content {
     padding: 20px;
 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
     .title {
         font-size: 14px;
         font-weight: 500;
@@ -49,6 +53,8 @@
     }
 
     section {
-        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
