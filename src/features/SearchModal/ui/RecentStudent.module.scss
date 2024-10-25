@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--component-gray1);
+
+    svg {
+        fill: var(--content-gray1);
+    }
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    .name {
+        font-size: 15px;
+        font-weight: 600;
+
+        color: var(--content-gray2);
+    }
+
+    .class {
+        font-size: 14px;
+        font-weight: 500;
+
+        color: var(--content-gray1);
+    }
+}
