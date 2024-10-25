@@ -2,7 +2,7 @@
 	"name": "Mixir",
 	"short_name": "Mixir",
 	"description": "선린고 체육 팀빌딩 앱",
-	"theme_color": "#ffc211",
+	"theme_color": "#ffffff",
 	"background_color": "#ffffff",
 	"display": "standalone",
 	"scope": "./",

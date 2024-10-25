@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  padding-block: 16px;
+  padding-inline: 16px;
+
+  font-weight: 500;
+
+  background-color: #fff;
+  border: 2px solid var(--solid-blue1);
+
+  border-radius: 12px;
+
+  img {
+    width: 28px;
+    height: auto;
+  }
+}
