@@ -7,6 +7,7 @@ import {useEffect, useRef} from "react";
 import PageShortcut from "@/features/SearchModal/ui/PageShortcut";
 import { FaRegUser } from "react-icons/fa";
 import RecentStudent from "@/features/SearchModal/ui/RecentStudent";
+import RecentGame from "@/features/SearchModal/ui/RecentGame";
 
 const SearchModal = () => {
     const InputRef = useRef<HTMLInputElement | null>(null);
@@ -40,7 +41,15 @@ const SearchModal = () => {
                 </section>
                 <section>
                     <h2 className={style.title}>학생</h2>
-                    <RecentStudent name={'김철수'} grade={1} schoolClass={4}/>
+                    <RecentStudent name={'아침유찬'} grade={1} schoolClass={4}/>
+                    <RecentStudent name={'한녀찬'} grade={1} schoolClass={4}/>
+                    <RecentStudent name={'원숭이두찬'} grade={1} schoolClass={4}/>
+                </section>
+                <section>
+                    <h2 className={style.title}>경기</h2>
+                    <RecentGame name={'아침유찬 경기'} leftScore={1} rightScore={3}/>
+                    <RecentGame name={'한녀찬 경기'} leftScore={1} rightScore={3}/>
+                    <RecentGame name={'원숭이두찬 경기'} leftScore={1} rightScore={3}/>
                 </section>
             </article>
         </Modal>
