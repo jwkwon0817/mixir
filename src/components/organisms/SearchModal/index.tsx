@@ -8,13 +8,20 @@ import PageShortcut from "@/features/SearchModal/ui/PageShortcut";
 import { FaRegUser } from "react-icons/fa";
 import RecentStudent from "@/features/SearchModal/ui/RecentStudent";
 import RecentGame from "@/features/SearchModal/ui/RecentGame";
+import {useModal} from "@/shared/states/useModal";
 
 const SearchModal = () => {
+    const {isModalOpen} = useModal();
     const InputRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
-        InputRef.current?.focus();
-    }, []);
+        if(!isModalOpen('SearchModal')) return;
+
+        if(InputRef.current) {
+            InputRef.current.focus(); // 모달이 열리면 Input에 포커스
+            InputRef.current.value = ''; // Input에 입력된 값 초기화
+        }
+    }, [isModalOpen('SearchModal')]);
 
     return (
         <Modal
