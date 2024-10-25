@@ -6,6 +6,7 @@ import {IoSearch} from "react-icons/io5";
 import {useEffect, useRef} from "react";
 import PageShortcut from "@/features/SearchModal/ui/PageShortcut";
 import { FaRegUser } from "react-icons/fa";
+import RecentStudent from "@/features/SearchModal/ui/RecentStudent";
 
 const SearchModal = () => {
     const InputRef = useRef<HTMLInputElement | null>(null);
@@ -33,9 +34,13 @@ const SearchModal = () => {
                 />
             </div>
             <article className={style.content}>
-                <h2 className={style.title}>바로 가기</h2>
                 <section>
-                    <PageShortcut name={'학생 관리'} icon={<FaRegUser />} href={'/sex'} />
+                    <h2 className={style.title}>바로 가기</h2>
+                    <PageShortcut name={'학생 관리'} icon={<FaRegUser/>} href={'/sex'}/>
+                </section>
+                <section>
+                    <h2 className={style.title}>학생</h2>
+                    <RecentStudent name={'김철수'} grade={1} schoolClass={4}/>
                 </section>
             </article>
         </Modal>
