@@ -1,9 +1,22 @@
-import Header from "@/components/molecules/Header";
+'use client';
+
+import useDevice from '@/hooks/useDevice';
 
 export default function Home() {
+	const { isMobile, isDesktop } = useDevice();
+
 	return (
 		<>
-			<Header/>
+			{
+				isMobile && (
+					<div>Mobile</div>
+				)
+			}
+			{
+				isDesktop && (
+					<div>Desktop</div>
+				)
+			}
 		</>
 	);
 }
