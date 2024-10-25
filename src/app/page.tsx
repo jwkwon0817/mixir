@@ -1,7 +1,9 @@
+import Header from "@/components/molecules/Header";
+
 export default function Home() {
 	return (
 		<>
-			<span>test1234</span>
+			<Header/>
 		</>
 	);
 }
