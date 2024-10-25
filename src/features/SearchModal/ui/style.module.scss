@@ -1,0 +1,21 @@
+.container {
+    width: fit-content;
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: var(--content-gray1);
+    background-color: var(--component-gray1);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 9999px;
+
+    padding: 8px 14px;
+}
