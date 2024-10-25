@@ -1,7 +1,7 @@
 export default function Home() {
 	return (
 		<>
-			<span>asd</span>
+			<span>test1234</span>
 		</>
 	);
 }
