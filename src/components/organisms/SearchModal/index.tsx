@@ -30,7 +30,9 @@ const SearchModal = () => {
                     placeholder={'검색어를 입력해주세요'}
                 />
             </div>
-            asd
+            <section className={style.content}>
+                <h2 className={style.title}>바로 가기</h2>
+            </section>
         </Modal>
     );
 }

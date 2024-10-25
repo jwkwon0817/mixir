@@ -1,5 +1,5 @@
 .searchBar {
-    width: 540px;
+    width: 600px;
     height: 54px;
 
     background-color: var(--component-gray1);
@@ -37,5 +37,18 @@
         &::placeholder {
             color: var(--content-gray1);
         }
+    }
+}
+
+.content {
+    padding: 30px 20px 20px 20px;
+
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+
+        margin: 0;
+
+        color: var(--content-gray1);
     }
 }
