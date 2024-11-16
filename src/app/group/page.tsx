@@ -8,7 +8,6 @@ export default function Group() {
         <>
             <Header />
             <main className={style.container}>
-                <PageTitle>그룹 관리</PageTitle>
                 <GroupListSideBar />
             </main>
         </>
