@@ -9,7 +9,7 @@
     font-weight: 600;
     font-size: 16px;
 
-    color: var(--solid-blue1);
+    color: var(--brand-50);
 
     display: flex;
     align-items: center;
@@ -17,19 +17,11 @@
 
     &:hover {
         cursor: pointer;
-        background-color: var(--background-blue3);
+        background-color: var(--brand-5);
     }
 
     &:active {
-        background-color: var(--component-gray2);
-    }
-
-    // 선택 되었을때
-    &[data-selected="true"] {
-        background-color: var(--background-blue3);
-        color: var(--solid-blue1);
-
-        font-weight: bold;
+        background-color: var(--brand-10);
     }
 }
 
@@ -43,5 +35,5 @@
 
     border-radius: 50%;
 
-    background-color: var(--solid-blue1);
+    background-color: var(--brand-50);
 }

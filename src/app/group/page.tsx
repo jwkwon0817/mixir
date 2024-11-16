@@ -1,7 +1,7 @@
 import Header from "@/components/molecules/Header";
 import GroupListSideBar from "@/features/Group/ui/GroupListSideBar/GroupListSideBar";
 import style from '@/styles/app/group/page.module.scss';
-import PageTitle from "@/components/atoms/PageTitle";
+import GroupStudentTable from "@/features/Group/ui/GroupStudentTable";
 
 export default function Group() {
     return (
@@ -9,6 +9,7 @@ export default function Group() {
             <Header />
             <main className={style.container}>
                 <GroupListSideBar />
+                <GroupStudentTable />
             </main>
         </>
     )

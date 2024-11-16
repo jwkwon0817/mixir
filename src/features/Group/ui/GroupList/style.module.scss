@@ -9,21 +9,21 @@
     font-weight: 500;
     font-size: 16px;
 
-    color: var(--content-gray1);
+    color: var(--gray-60);
 
     &:hover {
         cursor: pointer;
-        background-color: var(--component-gray1);
+        background-color: var(--gray-1);
     }
 
     &:active {
-        background-color: var(--component-gray2);
+        background-color: var(--gray-10);
     }
 
     // 선택 되었을때
     &[data-selected="true"] {
-        background-color: var(--background-blue3);
-        color: var(--solid-blue1);
+        background-color: var(--brand-50);
+        color: var(--gray-1);
 
         font-weight: bold;
     }

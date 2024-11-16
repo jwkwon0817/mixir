@@ -14,35 +14,33 @@ body, html {
 
 
 :root {
-  --background-blue1: #FDFDFE;
-  --background-blue2: #F7F9FF;
-  --background-blue3: #eef3ff;
-  --background-gray1: #FCFCFD;
-  --background-gray2: #F9F9FB;
+  /* Brand Colors */
+  --brand-1: #f3f5ff;
+  --brand-5: #F0F3FF;
+  --brand-10: #E5EAFF;
+  --brand-20: #D6DEFF;
+  --brand-30: #B8C7FF;
+  --brand-40: #899DFF;
+  --brand-50: #456FFC;
+  --brand-60: #2E55DB;
+  --brand-70: #1F3EBF;
+  --brand-80: #132AA3;
+  --brand-90: #0A1987;
+  --brand-100: #040C6B;
 
-  --content-blue1: #395BC7;
-  --content-blue2: #1D2E5C;
-  --content-gray1: #62636C;
-  --content-gray2: #1E1F24;
-
-  --component-blue1: #EDF2FE;
-  --component-blue2: #DFEAFF;
-  --component-blue3: #D0DFFF;
-  --component-gray1: #EFF0F3;
-  --component-gray2: #E7E8EC;
-  --component-gray3: #E0E1E6;
-
-  --border-blue1: #BDD1FF;
-  --border-blue2: #A6BFF9;
-  --border-blue3: #87A5EF;
-  --border-gray1: #D8D9E0;
-  --border-gray2: #CDCED7;
-  --border-gray3: #B9BBC6;
-
-  --solid-blue1: #456FFC;
-  --solid-blue2: #3657C3;
-  --solid-gray1: #8B8D98;
-  --solid-gray2: #80828D;
+  /* Gray Scale */
+  --gray-1: #f7f7f7;
+  --gray-5: #f2f2f2;
+  --gray-10: #e8e8e8;
+  --gray-20: #dadada;
+  --gray-30: #cccccc;
+  --gray-40: #aeaeae;
+  --gray-50: #919191;
+  --gray-60: #747474;
+  --gray-70: #575757;
+  --gray-80: #3b3b3b;
+  --gray-90: #1f1f1f;
+  --gray-100: #000000;
 
   --text: #18181a;
 
