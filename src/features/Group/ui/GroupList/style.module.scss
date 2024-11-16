@@ -1,12 +1,15 @@
 .container {
     width: 100%;
 
-    padding: 17px 20px;
+    padding: 12px 15px;
+    margin-left: -14px;
 
-    //margin-left: -15px;
+    border-radius: 10px;
 
-    border-radius: 9999px;
+    font-weight: 400;
+    font-size: 18px;
 
+    color: var(--content-gray1);
 
     &:hover {
         cursor: pointer;
@@ -19,7 +22,9 @@
 
     // 선택 되었을때
     &[data-selected="true"] {
-        background-color: var(--solid-blue1);
-        color: white;
+        background-color: var(--background-blue3);
+        color: var(--solid-blue1);
+
+        font-weight: bold;
     }
 }
