@@ -1,0 +1,37 @@
+.progressMatchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    margin-top: 50px;
+}
+
+.progressMatch {
+    display: flex;
+    gap: 100px;
+
+    // 제목 및 경기 개수
+    div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .progressMatchTitle {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--content-gray2);
+    }
+
+    .progressMatchDescription {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--solid-gray1);
+    }
+
+    .progressMatchData {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

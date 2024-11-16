@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
 @import 'font.scss';
 
 body, html {
@@ -7,7 +9,7 @@ body, html {
 
 * {
   box-sizing: border-box;
-  font-family: "Pretendard Variable", sans-serif;
+  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 :root {
@@ -35,8 +37,16 @@ body, html {
   --border-gray2: #CDCED7;
   --border-gray3: #B9BBC6;
 
-  --solid-blue1: #3D63DD;
+  --solid-blue1: #456FFC;
   --solid-blue2: #3657C3;
   --solid-gray1: #8B8D98;
   --solid-gray2: #80828D;
+
+  --text: #18181a;
+
+  --padding: 40px;
+}
+
+.section {
+  padding: 0 var(--padding);
 }

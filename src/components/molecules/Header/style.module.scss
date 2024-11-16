@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 22px;
+    padding: 0 var(--padding);
 }
 
 .logo {
@@ -17,5 +17,4 @@
     font-size: 14px;
 
     color: var(--content-gray1);
-
 }

@@ -44,7 +44,7 @@ const SearchModal = () => {
             <article className={style.content}>
                 <section>
                     <h2 className={style.title}>바로 가기</h2>
-                    <PageShortcut name={'학생 관리'} icon={<FaRegUser/>} href={'/sex'}/>
+                    <PageShortcut name={'그룹 관리'} icon={<FaRegUser/>} href={'/sex'}/>
                 </section>
                 <section>
                     <h2 className={style.title}>학생</h2>

@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+
+    padding: 17px 20px;
+
+    //margin-left: -15px;
+
+    border-radius: 9999px;
+
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--component-gray1);
+    }
+
+    &:active {
+        background-color: var(--component-gray2);
+    }
+
+    // 선택 되었을때
+    &[data-selected="true"] {
+        background-color: var(--solid-blue1);
+        color: white;
+    }
+}
