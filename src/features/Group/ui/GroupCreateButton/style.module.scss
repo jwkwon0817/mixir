@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+
+    padding: 10px 13px;
+    margin-left: -13px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 16px;
+
+    color: var(--solid-blue1);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--background-blue3);
+    }
+
+    &:active {
+        background-color: var(--component-gray2);
+    }
+
+    // 선택 되었을때
+    &[data-selected="true"] {
+        background-color: var(--background-blue3);
+        color: var(--solid-blue1);
+
+        font-weight: bold;
+    }
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: var(--solid-blue1);
+}
