@@ -11,9 +11,9 @@ const GroupListSideBar = () => {
             <section className={style.groupList}>
                 {/* 그룹 목록 */}
                 <GroupList name={'1학년 4반'} onClick={() => {}} selected={false} />
-                <GroupList name={'1학년 3반'} onClick={() => {}} selected={false} />
+                <GroupList name={'1학년 3반'} onClick={() => {}} selected={true} />
 
-                <GroupList name={'1학년 5반'} onClick={() => {}} selected={true} />
+                <GroupList name={'1학년 5반'} onClick={() => {}} selected={false} />
 
             </section>
         </aside>
