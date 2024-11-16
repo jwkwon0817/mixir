@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/static/complete/WantedSans.min.css");
 
 @import 'font.scss';
 
@@ -9,12 +9,14 @@ body, html {
 
 * {
   box-sizing: border-box;
-  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Wanted Sans Variable";
 }
+
 
 :root {
   --background-blue1: #FDFDFE;
   --background-blue2: #F7F9FF;
+  --background-blue3: #e5ebff;
   --background-gray1: #FCFCFD;
   --background-gray2: #F9F9FB;
 
