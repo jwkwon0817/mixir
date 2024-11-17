@@ -6,8 +6,130 @@
 .table {
     width: 100%;
     border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
 }
 
-.tr {
+.thead {
     background-color: var(--gray-5);
+    display: flex;
+    border-radius: 8px;
+
+    th {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        color: var(--gray-70);
+        padding: 10px;
+    }
+}
+
+.tbody {
+    display: flex;
+    flex-direction: column;
+
+    tr {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--gray-10);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        td {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+            color: var(--gray-100);
+
+            padding: 10px;
+
+            /* 체크박스 스타일 추가 */
+            input[type="checkbox"] {
+                appearance: none;
+                --webkit-appearance: none;
+
+                width: 18px;
+                height: 18px;
+
+                border: 1.5px solid var(--gray-30);
+                border-radius: 6px;
+
+                transition: .15s all ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: var(--gray-40);
+                }
+
+                &:checked {
+                    background-color: var(--brand-50);
+
+                    border-color: var(--white);
+                    outline: 2px solid var(--brand-50);
+                }
+            }
+
+            // 체크박스
+            &:nth-child(1) {
+                min-width: 70px;
+
+                margin-bottom: -1ppx;
+            }
+
+            // 아이디
+            &:nth-child(2) {
+                min-width: 70px;
+                color: var(--gray-50);
+            }
+
+            // 학번
+            &:nth-child(3) {
+                min-width: 80px;
+                color: var(--brand-50);
+            }
+
+            // 이름
+            &:nth-child(4) {
+                min-width: 130px;
+            }
+        }
+    }
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 4px 8px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        line-height: 1;
+    }
+
+    // 상태별 스타일
+    &.good {
+        background-color: rgba(0, 128, 0, 0.1);
+        color: #2e7d32;
+    }
+
+    &.normal {
+        background-color: rgba(128, 128, 128, 0.1);
+        color: #616161;
+    }
+
+    &.bad {
+        background-color: rgba(255, 0, 0, 0.1);
+        color: #d32f2f;
+    }
 }

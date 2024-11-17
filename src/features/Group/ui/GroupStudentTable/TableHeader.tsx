@@ -2,16 +2,13 @@ import style from './style.module.scss';
 
 const TableHeader = ({onSelectAll}: {onSelectAll: (checked: boolean) => void}) => {
     return (
-        <thead className={style.tr}>
+        <thead className={style.thead}>
         <tr>
-            <th>
-                <input type="checkbox" onChange={(e) => onSelectAll(e.target.checked)}/>
-            </th>
-            <th>#</th>
-            <th>학번</th>
-            <th>이름</th>
-            <th>배드민턴 실력</th>
-            <th>Group</th>
+            <th style={{minWidth: 70}} />
+            <th style={{minWidth: 70}}>#</th>
+            <th style={{minWidth: 80}}>학번</th>
+            <th style={{minWidth: 130}}>이름</th>
+            <th style={{minWidth: 130}}>배드민턴 수준</th>
         </tr>
         </thead>
     )
