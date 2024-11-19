@@ -1,54 +1,57 @@
-import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { forwardRef } from 'react';
+import { MdOutlineKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { VscDash } from "react-icons/vsc";
 import styles from './style.module.scss';
-
-type skillType = 'good' | 'bad' | 'normal';
+import { StudentLevel } from "@/shared/types/level";
 
 interface TableBadgeProps {
-    skill: skillType;
+    skill: StudentLevel;
 }
 
-function skillToKorean(skill: skillType) {
+function skillToKorean(skill: StudentLevel) {
     switch (skill) {
-        case 'good':
+        case StudentLevel.GOOD:
             return '좋음';
-        case 'bad':
+        case StudentLevel.BAD:
             return '나쁨';
-        case 'normal':
+        case StudentLevel.AVERAGE:
             return '보통';
     }
 }
 
-function skillToColor(skill: skillType) {
+function skillToColor(skill: StudentLevel) {
     switch (skill) {
-        case 'good':
+        case StudentLevel.GOOD:
             return 'green';
-        case 'bad':
+        case StudentLevel.BAD:
             return 'red';
-        case 'normal':
+        case StudentLevel.AVERAGE:
             return 'gray';
     }
 }
 
-function skillIcon(skill: skillType) {
+function skillIcon(skill: StudentLevel) {
     switch (skill) {
-        case 'good':
+        case StudentLevel.GOOD:
             return <MdOutlineKeyboardArrowUp color={skillToColor(skill)} size={18} />;
-        case 'bad':
+        case StudentLevel.BAD:
             return <MdKeyboardArrowDown color={skillToColor(skill)} size={18} />;
-        case 'normal':
+        case StudentLevel.AVERAGE:
             return <VscDash color={skillToColor(skill)} size={18} />;
     }
 }
 
-const TableBadge = ({ skill }: TableBadgeProps) => {
-    return (
-        <div className={`${styles.badge} ${styles[skill]}`}>
-            <span className={styles.icon}>{skillIcon(skill)}</span>
-            <span className={styles.text}>{skillToKorean(skill)}</span>
-        </div>
-    );
-}
+const TableBadge = forwardRef<HTMLDivElement, TableBadgeProps>(
+    ({ skill }, ref) => {
+        return (
+            <div ref={ref} className={`${styles.badge} ${styles[skill]}`}>
+                <span className={styles.icon}>{skillIcon(skill)}</span>
+                <span className={styles.text}>{skillToKorean(skill)}</span>
+            </div>
+        );
+    }
+);
+
+TableBadge.displayName = 'TableBadge';
 
 export default TableBadge;
