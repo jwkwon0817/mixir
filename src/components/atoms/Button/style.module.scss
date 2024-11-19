@@ -1,0 +1,68 @@
+// button.scss
+.button {
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(0.95);
+    }
+
+    &:active {
+        filter: brightness(0.8);
+    }
+
+    &[data-style="primary"] {
+        background-color: var(--brand-50);
+        color: var(--white);
+    }
+
+    // 버튼 스타일 추가
+    &[data-style="secondary"] {
+        background: linear-gradient(180deg, var(--brand-50) 0%, var(--brand-60) 100%);
+        color: var(--gray-60);
+    }
+
+    &[data-style="warning"] {
+        background: linear-gradient(180deg, var(--warning-50) 0%, var(--warning-60) 100%);
+        color: var(--white);
+    }
+
+    &[data-style="danger"] {
+        background: linear-gradient(180deg, var(--error-50) 0%, var(--error-60) 100%);
+        color: var(--white);
+    }
+
+    // 사이즈
+    &[data-size="large"] {
+        padding: 14px 28px;
+        font-size: 18px;
+    }
+
+    &[data-size="medium"] {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    &[data-size="small"] {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
