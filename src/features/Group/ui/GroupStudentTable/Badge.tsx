@@ -1,10 +1,10 @@
-import { forwardRef } from 'react';
+import {forwardRef, HTMLAttributes} from 'react';
 import { MdOutlineKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { VscDash } from "react-icons/vsc";
 import styles from './style.module.scss';
 import { StudentLevel } from "@/shared/types/level";
 
-interface TableBadgeProps extends HTMLDivElement{
+interface TableBadgeProps extends HTMLAttributes<HTMLDivElement>{
     skill: StudentLevel;
 }
 
