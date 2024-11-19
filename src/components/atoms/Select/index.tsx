@@ -15,6 +15,7 @@ interface SegmentControlProps {
     fullWidth?: boolean;
     defaultSelect?: boolean;
     onChange?: (value: string) => void;
+    style?: React.CSSProperties;
 }
 
 const SegmentControl = ({
@@ -23,7 +24,8 @@ const SegmentControl = ({
                             defaultValue,
                             fullWidth,
                             defaultSelect = true,
-                            onChange
+                            onChange,
+                            style,
                         }: SegmentControlProps) => {
     const [selected, setSelected] = useState(defaultSelect ? (defaultValue || options[0].value) : null);
 
@@ -33,9 +35,9 @@ const SegmentControl = ({
     };
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrap} style={{...style, width: fullWidth ? '100%' : 'fit-width'}}>
             {label && <label className={styles.label}>{label}</label>}
-            <div className={styles.container} style={{ width: fullWidth ? '100%' : 'fit-width' }}>
+            <div className={styles.container} style={{width: fullWidth ? '100%' : 'fit-width'}}>
                 {options.map((option) => (
                     <button
                         key={option.value}
