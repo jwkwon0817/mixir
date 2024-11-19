@@ -1,6 +1,6 @@
 'use client';
 
-import useDevice from '@/hooks/useDevice';
+import useDevice from '@/shared/hooks/useDevice';
 import mobile from './mobile.module.scss';
 import { GoogleLoginButton } from '@/components/molecules';
 import Image from 'next/image';
