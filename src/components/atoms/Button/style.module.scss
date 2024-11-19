@@ -25,7 +25,7 @@
 
     // 버튼 스타일 추가
     &[data-style="secondary"] {
-        background: linear-gradient(180deg, var(--brand-50) 0%, var(--brand-60) 100%);
+        background: linear-gradient(180deg, var(--gray-10) 0%, var(--gray-20) 100%);
         color: var(--gray-60);
     }
 
