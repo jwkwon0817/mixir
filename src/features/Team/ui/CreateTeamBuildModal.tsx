@@ -1,7 +1,7 @@
 'use client'
 
 import React, {useState} from 'react';
-import styles from './style.module.scss';
+import styles from './CreateTeamBuildModal.module.scss';
 import Modal from "@/components/molecules/Modal";
 import Input from "@/components/atoms/Input";
 import {TeamBuildingModalProps} from "@/shared/types/Team/CreateTeamBuildingModal";

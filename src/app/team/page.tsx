@@ -7,7 +7,7 @@ import styles from '@/styles/app/team/page.module.scss';
 import Button from "@/components/atoms/Button";
 import {ButtonSize, ButtonStyle} from "@/shared/types/button";
 import {IoMdAdd} from "react-icons/io";
-import CreateTeamBuildModal from "@/features/Team/CreateTeamBuildModal";
+import CreateTeamBuildModal from "@/features/Team/ui/CreateTeamBuildModal";
 import {useModal} from "@/shared/states/useModal";
 
 const PageTeam = () => {
