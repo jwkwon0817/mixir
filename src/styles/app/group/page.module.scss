@@ -5,3 +5,37 @@
 
     padding: 20px 40px 0 40px;
 }
+
+.table {
+    width: 100%;
+
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+}
+
+.tableHeader {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .groupName {
+        font-size: 24px;
+        font-weight: 500;
+
+        color: var(--gray-100);
+
+        margin: 0;
+    }
+
+    .buttonList {
+        display: flex;
+        gap: 10px;
+    }
+}
