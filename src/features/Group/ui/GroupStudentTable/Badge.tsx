@@ -4,7 +4,7 @@ import { VscDash } from "react-icons/vsc";
 import styles from './style.module.scss';
 import { StudentLevel } from "@/shared/types/level";
 
-interface TableBadgeProps {
+interface TableBadgeProps extends HTMLDivElement{
     skill: StudentLevel;
 }
 
