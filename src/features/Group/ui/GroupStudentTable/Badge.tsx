@@ -42,9 +42,9 @@ function skillIcon(skill: StudentLevel) {
 }
 
 const TableBadge = forwardRef<HTMLDivElement, TableBadgeProps>(
-    ({ skill, className }, ref) => {
+    ({ skill, className, ...props }, ref) => {
         return (
-            <div ref={ref} className={`${styles.badge} ${styles[skill]} ${className}`}>
+            <div ref={ref} className={`${styles.badge} ${styles[skill]} ${className}`} {...props}>
                 <span className={styles.icon}>{skillIcon(skill)}</span>
                 <span className={styles.text}>{skillToKorean(skill)}</span>
             </div>
