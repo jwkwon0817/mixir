@@ -9,12 +9,19 @@ interface ButtonProps {
     isPending?: boolean;
     icon?: React.ReactNode;
     onClick?: () => void;
+    fullWidth?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({style, size, children, icon, onClick}: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({style, size, children, icon, onClick, fullWidth = false}: ButtonProps) => {
     const clonedIcon = icon ? cloneElement(icon as React.ReactElement, {className: styles.icon}) : null;
     return (
-        <button className={styles.button} onClick={onClick} data-style={style} data-size={size}>
+        <button
+            className={styles.button}
+            onClick={onClick}
+            data-style={style}
+            data-size={size}
+            style={{width: fullWidth ? '100%' : 'auto'}}
+        >
             {clonedIcon} {children}
         </button>
     )
