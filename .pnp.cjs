@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:18.3.1"],\
           ["react-icons", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.3.0"],\
+          ["react-spinners", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:0.14.1"],\
           ["sass", "npm:1.80.4"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"],\
           ["zustand", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.0.0"]\
@@ -6815,6 +6816,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:18.3.1"],\
           ["react-icons", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.3.0"],\
+          ["react-spinners", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:0.14.1"],\
           ["sass", "npm:1.80.4"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"],\
           ["zustand", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:5.0.0"]\
@@ -7539,6 +7541,32 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/react-is-npm-16.13.1-a9b9382b4f-10c0.zip/node_modules/react-is/",\
         "packageDependencies": [\
           ["react-is", "npm:16.13.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-spinners", [\
+      ["npm:0.14.1", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/react-spinners-npm-0.14.1-545ddaba3f-10c0.zip/node_modules/react-spinners/",\
+        "packageDependencies": [\
+          ["react-spinners", "npm:0.14.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:0.14.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-spinners-virtual-24e9cbf089/3/AppData/Local/Yarn/Berry/cache/react-spinners-npm-0.14.1-545ddaba3f-10c0.zip/node_modules/react-spinners/",\
+        "packageDependencies": [\
+          ["react-spinners", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:0.14.1"],\
+          ["@types/react", "npm:18.3.11"],\
+          ["@types/react-dom", "npm:18.3.0"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:6e68231de7fd507d489de3fcbc41b00533cba6a52b6f342355beb485e1ce827af9846c3c133334dd232910ac50917cb821db9e41c82d8c0d9557d633e5ef185d#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
