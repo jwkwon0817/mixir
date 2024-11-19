@@ -26,7 +26,7 @@ function skillToColor(skill: StudentLevel) {
         case StudentLevel.BAD:
             return 'red';
         case StudentLevel.AVERAGE:
-            return 'gray';
+            return 'orange';
     }
 }
 

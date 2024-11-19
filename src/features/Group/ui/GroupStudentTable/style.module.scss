@@ -117,17 +117,17 @@
     }
 
     // 상태별 스타일
-    &.good {
+    &.GOOD {
         background-color: rgba(0, 128, 0, 0.1);
         color: #2e7d32;
     }
 
-    &.normal {
-        background-color: rgba(128, 128, 128, 0.1);
-        color: #616161;
+    &.AVERAGE {
+        background-color: rgba(255, 113, 12, 0.15);
+        color: #ff6c00;
     }
 
-    &.bad {
+    &.BAD {
         background-color: rgba(255, 0, 0, 0.1);
         color: #d32f2f;
     }
