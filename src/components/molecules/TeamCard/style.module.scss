@@ -1,0 +1,74 @@
+.container {
+    user-select: none; // 유저 드래그 막기
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    background-color: var(--gray-10);
+
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--gray-20);
+    }
+
+    &:active {
+        background-color: var(--gray-30);
+    }
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+        font-size: 20px;
+        font-weight: 700;
+
+        color: var(--text);
+
+        padding-top: 4px;
+    }
+
+    .groupName {
+        font-size: 16px;
+        font-weight: 500;
+
+        color: var(--gray-60);
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.sectionItem {
+    width: 240px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    span {
+        font-size: 16px;
+        font-weight: 500;
+
+        color: var(--text);
+    }
+
+    span:first-child {
+        color: var(--gray-60);
+
+        font-weight: 600;
+    }
+}
