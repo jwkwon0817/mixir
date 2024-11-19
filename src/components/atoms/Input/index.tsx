@@ -9,9 +9,9 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-    ({ error, label, className, ...props }, ref) => {
+    ({ error, label, className, style, ...props }, ref) => {
         return (
-            <div className={styles.inputWrapper}>
+            <div className={styles.inputWrapper} style={style}>
                 {label && (
                     <label
                         htmlFor={props.id}
