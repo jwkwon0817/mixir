@@ -1,0 +1,49 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    width: 100%;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gray-100);
+
+    margin: 0;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--gray-60);
+    margin: 0 0 20px 0;
+}
+
+.classSelectContainer {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 5px;
+}
+
+.selectLevelList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 15px 0;
+}
+
+.bottom {
+    width: 100%;
+}
+
+
+
