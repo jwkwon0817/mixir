@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 500;
+
+    color: var(--gray-70);
+    margin: 0;
+}
+
+.levelList{
+    display: flex;
+    gap: 8px;
+}
+
+.badge {
+    cursor: pointer;
+}
