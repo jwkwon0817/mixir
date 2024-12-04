@@ -1,8 +1,13 @@
-import { Header } from "@/components/molecules";
+'use client'
+
+import {Header} from "@/components/molecules";
 import MaxWidth from "@/components/atoms/MaxWidth";
 import styles from '@/styles/app/team/[teamId]/page.module.scss';
 import {BuildGroup} from "@/components/molecules/BuildDraggableGroup/types";
 import {TeamBuilderList} from "@/components/molecules/BuildDraggableGroup/teamBuilderList";
+import Button from "@/components/atoms/Button";
+import {ButtonSize, ButtonStyle} from "@/shared/types/button";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const initialGroups: BuildGroup[] = [
     {
@@ -71,9 +76,13 @@ const PageTeamDetail = () => {
     return (
         <>
             <Header />
-            <MaxWidth style={{ display: 'flex', flexDirection: 'column' }}>
+            <MaxWidth style={{ display: 'flex', flexDirection: 'column', paddingTop: '20px', alignItems: 'flex-start' }}>
+                <Button
+                    style={ButtonStyle.Secondary}
+                    size={ButtonSize.Small}
+                    onClick={() => window.history.back()}
+                ><FaArrowLeft /> 뒤로가기</Button>
                 <h1>{teamName} 팀 빌딩</h1>
-                <span className={styles.title}>팀 빌딩 결과</span>
                 <TeamBuilderList initialGroups={initialGroups} />
             </MaxWidth>
         </>
