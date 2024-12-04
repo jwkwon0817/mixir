@@ -31,7 +31,6 @@ export const BuildDraggableGroupItem = ({
                     <div className={styles.container}>
                         <div className={styles.header}>
                             <span className={styles.title}>{name}</span>
-                            <FaRegEdit className={styles.editIcon}/>
                         </div>
                         <span className={styles.grade}>{classInfo.grade}학년 {classInfo.class}반</span>
                     </div>

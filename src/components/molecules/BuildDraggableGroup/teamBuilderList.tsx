@@ -1,4 +1,3 @@
-// components/organisms/TeamBuilder/index.tsx
 'use client'
 
 import {useCallback, useState} from 'react';
@@ -34,20 +33,18 @@ export const TeamBuilderList = ({ initialGroups }: TeamBuilderProps) => {
 
         const { sourceGroup, destGroup, sourceIndex, destIndex, movedItem } = pendingMove;
 
-        const newGroups = groups.map(group => {
-            if (group.id === sourceGroup.id) {
-                return {
-                    ...group,
-                    items: group.items.filter((_, index) => index !== sourceIndex)
-                };
-            }
-            if (group.id === destGroup.id) {
-                const newItems = [...group.items];
-                newItems.splice(destIndex, 0, movedItem);
-                return { ...group, items: newItems };
-            }
-            return group;
-        });
+        // 소스 그룹을 제외한 새로운 그룹 배열 생성
+        const newGroups = groups
+            .filter(group => group.id !== sourceGroup.id) // 소스 그룹 제거
+            .map(group => {
+                if (group.id === destGroup.id) {
+                    // 대상 그룹에 아이템 추가
+                    const newItems = [...group.items];
+                    newItems.splice(destIndex, 0, movedItem);
+                    return { ...group, items: newItems };
+                }
+                return group;
+            });
 
         setGroups(newGroups);
         closeModal(CONFIRM_MODAL_ID);
@@ -91,7 +88,7 @@ export const TeamBuilderList = ({ initialGroups }: TeamBuilderProps) => {
     return (
         <>
             <DragDropContext onDragEnd={onDragEnd}>
-                <div className={styles.groupList}>
+                <div style={{display: 'flex', gap: 15, alignItems: 'flex-start'}}>
                     {groups.map(group => (
                         <BuildDraggableGroup
                             key={group.id}

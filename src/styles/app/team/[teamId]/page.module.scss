@@ -4,15 +4,9 @@
 
 .groupList {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 10px;
-}
 
-.groupList {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    background-color: red;
+
     gap: 20px;
     padding: 20px;
 }
