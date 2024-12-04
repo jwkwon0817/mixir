@@ -23,7 +23,9 @@ export default function Group() {
                     <GroupStudentTable />
                 </div>
             </main>
-            <AddStudentInGroupModal modalId={'addStudentInGroupModal'} />
+            <AddStudentInGroupModal
+                modalId={'addStudentInGroupModal'}
+            />
         </>
     )
 };

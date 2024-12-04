@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+
+    border-radius: 10px;
+
+    background-color: var(--gray-5);
+}
+
+.header {
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+    padding-right: 10px;
+
+    .title {
+        padding: 10px 7px 0 20px;
+
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .titleEditIcon {
+        margin-top: 10px;
+
+        fill: var(--gray-40);
+
+        &:hover {
+            cursor: pointer;
+            fill: var(--gray-60);
+        }
+
+        &:active {
+            fill: var(--gray-50);
+        }
+    }
+}
+
+
