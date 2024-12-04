@@ -10,7 +10,7 @@ import {IoMdAdd} from "react-icons/io";
 import CreateTeamBuildModal from "@/features/Team/ui/CreateTeamBuildModal";
 import {useModal} from "@/shared/states/useModal";
 
-const PageTeam = () => {
+const PageMatch = () => {
     const { openModal } = useModal();
 
     return (
@@ -18,16 +18,16 @@ const PageTeam = () => {
             <Header />
             <MaxWidth>
                 <div className={styles.titleContainer}>
-                    <h1>팀 빌딩</h1>
+                    <h1>대진표</h1>
                     <Button
                         style={ButtonStyle.Primary}
                         size={ButtonSize.Medium}
                         icon={<IoMdAdd />}
                         onClick={() => openModal('team-building')}
-                    >팀 생성</Button>
+                    >대진표 생성</Button>
                 </div>
                 <section className={styles.list}>
-                    <TeamCard subName={'1학년 4반'} name={'수수수은수노바'} createAt={new Date()} peopleCount={32} />
+                    <TeamCard subName={'한녀찬 vs 유두준'} name={'수수수은수노바'} createAt={new Date()} peopleCount={32} />
                     <TeamCard subName={'1학년 4반'} name={'한녀찬'} createAt={new Date()} peopleCount={32} />
                     <TeamCard subName={'1학년 4반'} name={'권찌찌'} createAt={new Date()} peopleCount={32} />
                     <TeamCard subName={'1학년 4반'} name={'유두준'} createAt={new Date()} peopleCount={32} />
@@ -36,9 +36,8 @@ const PageTeam = () => {
                     <TeamCard subName={'1학년 4반'} name={'원숭이두찬'} createAt={new Date()} peopleCount={32} />
                 </section>
             </MaxWidth>
-            <CreateTeamBuildModal modalId="team-building" />
         </>
     )
 }
 
-export default PageTeam;
+export default PageMatch;

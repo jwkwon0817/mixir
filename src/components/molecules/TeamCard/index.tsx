@@ -11,16 +11,17 @@ const SectionNameVaule = ({name, value}: {name: string, value: string}) => {
 }
 
 interface TeamCardProps {
+    subName: string;
     name: string;
     peopleCount: number;
     createAt: Date;
 }
 
-const TeamCard = ({name, peopleCount, createAt}: TeamCardProps) => {
+const TeamCard = ({subName, name, peopleCount, createAt}: TeamCardProps) => {
     return (
         <article className={styles.container}>
             <div className={styles.titleContainer}>
-                <span className={styles.groupName}>1학년 4반</span>
+                <span className={styles.groupName}>{subName}</span>
                 <span className={styles.name}>{name}</span>
             </div>
             <section className={styles.section}>
